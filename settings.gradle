@@ -19,6 +19,9 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "debug-kux-pack-app"
+rootProject.name = "SinleUI-app"
 include ':app'
 include ':uniappx'
+include ':sn-e-gesture'
+include ':sn-e-scan-provider'
+include ':sn-e-svg'

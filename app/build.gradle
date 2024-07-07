@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'cn.uvuejs.unix'
+    namespace 'cn.uvuejs.kux'
 	compileSdk 34
 	
 	buildFeatures {
@@ -13,9 +13,9 @@ android {
 	}
 
     defaultConfig {
-        applicationId 'cn.uvuejs.unix'
+        applicationId 'cn.uvuejs.kux'
         minSdk 21
-        targetSdk 30
+		targetSdk 33
         versionCode 100
         versionName '1.0.0'
 
@@ -26,6 +26,7 @@ android {
 		
 
         ndk {
+            abiFilters "arm64-v8a"
         }
 
     }
@@ -53,6 +54,10 @@ android {
         }
     }
 
+	lintOptions {
+	    checkReleaseBuilds false
+	    abortOnError false
+	}
 	compileOptions {
 	    sourceCompatibility JavaVersion.VERSION_1_8
 	    targetCompatibility JavaVersion.VERSION_1_8
@@ -80,6 +85,9 @@ dependencies {
     implementation project(':uniappx')
     implementation fileTree(include: ['*.aar', '*.jar'], dir: '../uniappx/libs')
     implementation "com.squareup.okhttp3:okhttp:3.12.12"
+	implementation project(':sn-e-gesture')
+	implementation project(':sn-e-scan-provider')
+	implementation project(':sn-e-svg')
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.core:core:1.1.0'
