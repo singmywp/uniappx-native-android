@@ -1,0 +1,47 @@
+{
+  "id": "__UNI__B140C8B",
+  "name": "SinleUI",
+  "description": "一个简洁、轻巧的现代移动应用UI框架。",
+  "version": {
+    "name": "1.0.0",
+    "code": "100"
+  },
+  "uni-app-x": {
+    "compilerVersion": "4.23"
+  },
+  "app": {
+    "distribute": {
+      "android": {
+        "packagename": "com.singmy.sinleui",
+        "abiFilters": [
+          "arm64-v8a"
+        ],
+        "minSdkVersion": "21",
+        "targetSdkVersion": "33"
+      },
+      "icons": {
+        "android": {
+          "hdpi": "unpackage/res/icons/72x72.png",
+          "xhdpi": "unpackage/res/icons/96x96.png",
+          "xxhdpi": "unpackage/res/icons/144x144.png",
+          "xxxhdpi": "unpackage/res/icons/192x192.png"
+        },
+        "ios": {
+          "appstore": "unpackage/res/icons/1024x1024.png"
+        }
+      },
+      "_uni-app-x_": {
+        "pageOrientation": "auto"
+      },
+      "modules": {
+        "uni-rpx2px": {},
+        "uni-exit": {},
+        "uni-getSystemInfo": {},
+        "uni-storage": {},
+        "uni-prompt": {},
+        "uni-media": {},
+        "uni-theme": {}
+      }
+    }
+  }
+}
